@@ -5,9 +5,10 @@ public class TicTacToeBoard {
 	 * also be able to determine if there's a winner or not*/
 	
 	private GamePiece[][] game_board = new GamePiece[3][3]; //tic tac toe so 3x3 board
-	private int total_pieces_on_board = 0;
+	private int total_pieces_on_board = 0; 
 	
 	public void place_on_board(GamePiece given_piece) {
+		// adds game piece on board
 		total_pieces_on_board += 1;
 		game_board[given_piece.get_row()][given_piece.get_col()] = given_piece; //add to desired location on board
 	}
@@ -24,6 +25,10 @@ public class TicTacToeBoard {
 			}
 		}
 		System.out.println();
+	}
+	
+	public GamePiece[][] get_board() {
+		return game_board;
 	}
 	
 }
