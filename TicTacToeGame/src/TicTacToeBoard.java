@@ -18,7 +18,7 @@ public class TicTacToeBoard {
 			System.out.println();
 			for (int j = 0; j < game_board[0].length; j++) { //column
 				if (game_board[i][j] == null) {
-					System.out.print("[]" + " ");
+					System.out.print("_" + " ");
 				} else {
 					System.out.print(game_board[i][j].get_type() + " ");
 				}
